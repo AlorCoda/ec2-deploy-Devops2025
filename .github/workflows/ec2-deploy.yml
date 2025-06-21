@@ -21,7 +21,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.EC2_USER }}
-
+          TARGET: alorcoda
 
       - name: Executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
@@ -38,7 +38,7 @@ jobs:
             sudo systemctl start apache2
             sudo systemctl enable apache2
 
-            cd home
+            cd alorcoda
             
             # Remove existing contents of /var/www/html
             sudo rm -rf /var/www/html/*
