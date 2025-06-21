@@ -37,7 +37,8 @@ jobs:
             sudo systemctl daemon-reload
             sudo systemctl start apache2
             sudo systemctl enable apache2
-            cd alorcoda
+
+            cd home
             
             # Remove existing contents of /var/www/html
             sudo rm -rf /var/www/html/*
