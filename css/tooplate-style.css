@@ -205,6 +205,39 @@ http://www.tooplate.com/view/2098-health
 
 
   /*---------------------------------------
+       MAINTENANCE BANNER              
+  -----------------------------------------*/
+
+  .maintenance-banner {
+    background: #ff6b35;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+
+  .maintenance-banner p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .maintenance-banner .fa {
+    margin-right: 8px;
+    color: #ffffff;
+  }
+
+
+  /*---------------------------------------
        PRE LOADER              
   -----------------------------------------*/
 
