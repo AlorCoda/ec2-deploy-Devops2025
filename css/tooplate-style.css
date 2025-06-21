@@ -229,6 +229,14 @@ http://www.tooplate.com/view/2098-health
     font-size: 14px;
     font-weight: 500;
     color: #ffffff;
+    animation: slideText 8s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  @keyframes slideText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
   }
 
   .maintenance-banner .fa {
